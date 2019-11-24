@@ -1,0 +1,227 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #6441A5;
+	background-image: linear-gradient(60deg, #6441A5, #6733c6);
+	height: 90vh;
+}
+
+.box{
+	position: relative;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 10vh;
+    background: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0, .5);
+    border-radius: 10px;
+    max-height: 600px;
+    transition: all 1s ease-out;
+    overflow: hidden;
+}
+
+.box h2{
+	font-size: 50px;
+	letter-spacing: 4px;
+	margin: 0 0 30px 0;
+	padding: 30px;
+	color: #B65C20;
+	text-align: center;
+}
+
+.box input[type="submit"]
+{
+		width: 100px;
+      background: #F4511E ;
+      font-weight: bold;
+      color: white;
+      border: 0 none;
+      border-radius: 25px;
+      cursor: pointer;
+      padding: 10px 5px;
+      margin: 10px 5px;
+      margin-left: 35%;
+      font-weight: bolder;
+      transition: 0.5s ease;
+      outline: none;
+	
+}
+
+.box input[type="submit"]:hover{
+	background: #fc3a00;
+	color: white;
+	font-weight: bolder;
+	
+}
+
+.box .input-box{
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.box .input-box input{
+	width: 70%;
+	padding-top: 10px;
+	margin-left: 50px;
+	font-size: 18px;
+	color: black;
+	border: none;
+	border-bottom: 1px solid black;
+	outline: none;
+	margin-bottom: 10px;
+	background: transparent;
+}
+
+input[type="checkbox"]{
+	position: absolute;
+	
+	
+}
+
+.eye{
+	display: none;
+	cursor: pointer;
+}
+
+.glyphicon-eye-open{
+	color: black;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.icon .glyphicon glyphicon-eye-open{
+	color: black;
+}
+
+.icon {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    right: 60px;
+    cursor: pointer;
+}
+
+.box .input-box label{
+	position: absolute;
+	top: 0;
+	left: 5px;
+	margin-left: 50px;
+	padding-top: 10px;
+	font-size: 18px;
+	color: #706969;
+	pointer-events: none;
+	transition: 0.4s;
+
+}
+
+.box .input-box input:focus ~ label{
+	top: -25px;
+	left: 0;
+	color: #F4511E;
+	font-size: 14px;
+
+}
+
+.box .input-box input:valid ~ label{
+	top: -25px;
+	left: 0;
+	color: #B65C20;
+	font-size: 14px;
+
+}
+
+
+
+.first, .second{
+	z-index: 9;
+	animation: show 0.5s ease forwards;
+}
+
+@keyframes show{
+	0%{opacity: 0; transform: translate(0, -200px) scale(0.5); }
+	100%{opacity: 1; transform: translate(0,0) scale(1); }
+}
+
+.hide_form{
+	animation: hide 0.7s ease forwards;
+}
+
+.initial_hide{
+	animation: hide 0s ease forwards !important;
+}
+
+@keyframes hide{
+	from{opacity: 0.7; max-height: 1000px; z-index: 9; transform: translate(0, 0) scale(1); }
+	to{opacity: 0; max-height: 0; z-index: -1; visibility: hidden; transform: translate(0,5px) scale(0.6); }
+}
+
+.bottoms{
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.bottoms .btn{
+	flex-grow: 1;
+}
+
+.bottoms .btn-dim{
+	opacity: 0.5;
+	transition: all 0.3s ease;
+}
+
+.input-box select{
+	width: 70%;
+	height: 40px;
+	background: transparent;
+	font-weight: bold; 
+	margin-left: 50px;
+	font-size: 18px;
+	color: #706969;
+	border: none;
+	padding: 0;
+	border-bottom: 1px solid white;
+}
+
+.social{
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 400px;
+	display: flex;
+	justify-content: space-around;
+	justify-content: space-evenly;
+}
+
+.social button{
+	flex-grow: 1;
+	
+	border-radius: 5px;
+	color: white;
+	transition: all 1s ease;
+	font-family: "Roboto", sans-serif;
+}
+
+.social .facebook button{
+	background: #3B5998;
+}
+
+.social .google button{
+	background: #d34836;
+}
+
+
+.social button:hover{
+	color: #DEDEDE;
+	opacity: 1;
+}
+
+.socialMedia {
+	text-align: center;
+	margin-top: 1rem;
+}
+
+.socialMedia i {
+	color: #fff;
+  padding: 20px;
+}

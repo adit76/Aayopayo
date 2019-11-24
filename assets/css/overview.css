@@ -1,0 +1,109 @@
+.wrapper {
+    margin: 0 auto;
+    width: 860px;
+  }
+
+  .main{
+    display: flex;
+  }
+
+  .drift-demo-trigger {
+    width: 100%;
+    cursor: zoom-in;
+  }
+
+  .detail {
+    position: relative;
+    width: 55%;
+    margin-left: 5%;
+    float: left;
+
+  }
+
+  h1 {
+    color: #013C4A;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  p {
+    max-width: 32em;
+    margin-bottom: 1em;
+    color: #23637f;
+    line-height: 1.6em;
+  }
+
+  p:last-of-type {
+    margin-bottom: 2em;
+  }
+
+  a {
+    color: #00C0FA;
+  }
+
+  .ix-link {
+    display: block;
+    margin-bottom: 3em;
+  }
+
+
+  .overview .header h1{
+  background-color: #e0e0e0;
+  font-size: 30px;
+  font-weight: bolder;
+  padding : 20px;
+  margin: 0;
+
+
+}
+
+.overview{
+  margin: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+.overview .text {
+  padding: 20px;
+
+}
+
+.overview .text p{
+  margin: 0;
+  padding: 0;
+  color: black;
+  max-width: 100%;
+}
+
+.overview .text h3{
+  color: #757F95;
+  font-weight: bold;
+
+}
+
+@media only screen and (max-width: 900px){
+
+
+  .wrapper{
+    width: 100%;
+  }
+
+  .main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-left{
+    width: 100%;
+  }
+
+  .detail{
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+
+  }
+
+
+}
